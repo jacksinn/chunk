@@ -25,12 +25,12 @@ public:
 int main(int argc, char **argv)
 {
     Hero hero;
-	cout << ">>Welcome to Chunkland.\nI'm Chunk (no relation).\n Pleased to meet ya!\n\n";
+    cout << ">>Welcome to Chunkland.\nI'm Chunk (no relation).\n Pleased to meet ya!\n\n";
     cout << "Hi, I'm (enter your name): ";
     string name;
     cin >> name;
     hero.set_name(name);
     cout << ">>Well! " << hero.get_name() << " is my father's name!" << endl;
-    
+
     return 0;
 }
