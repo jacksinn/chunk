@@ -13,7 +13,7 @@ if(Boost_FOUND)
 
 endif()
 
-add_executable(BoostTest main.cpp)
+add_executable(BoostTest src/main.cpp)
 
 if(Boost_FOUND)
 
@@ -23,5 +23,5 @@ endif()
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES src/main.cpp)
 add_executable(chunk ${SOURCE_FILES})
