@@ -19,9 +19,6 @@ public:
     string get_name(void){
         return name;
     }
-
-    
-    
 };
 
 
