@@ -173,9 +173,9 @@ public:
     }
 };
 
-string speak(string character){
-    return "(" + character + "): ";
-}
+void setTheScene(string);
+string speak(string);
+
 int main(int argc, char **argv)
 {
     Hero player, chunk;
@@ -230,5 +230,17 @@ int main(int argc, char **argv)
         }
     }
 
+    setTheScene("BEHIND THE SHED");
+
     return 0;
+}
+
+string speak(string character){
+    return "(" + character + "): ";
+}
+
+void setTheScene(string location) {
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    cout << location << endl;
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 }
