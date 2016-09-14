@@ -6,6 +6,8 @@
 #include <string>
 #include <boost/algorithm/string.hpp>
 
+#include "Character.h"
+
 using namespace std;
 using namespace boost;
 
@@ -13,7 +15,7 @@ using namespace boost;
 #define CHUNK_HERO_H
 
 
-class Hero {
+class Hero: public Character {
 private:
     string name;
     string kin;
